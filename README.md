@@ -1,4 +1,4 @@
-# JPOS Choice - Perfume Matching and Scent Store
+# JPOS Choice  - Perfume Matching and Scent Store
 
 A web app for JPOS Choice to help you find your favorite perfume and see how to mix different scents together.
 
