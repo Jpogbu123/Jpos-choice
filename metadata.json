@@ -2,5 +2,5 @@
   "name": "JPO Choice",
   "description": "Luxury curated fragrance collection and personalized infinity scent layering stack explorer.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": []
 }

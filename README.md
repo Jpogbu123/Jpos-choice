@@ -18,13 +18,7 @@ A web app for JPOS Choice to help you find your favorite perfume and see how to 
    npm install
    ```
 
-2. **Add API Key:**
-   Create a `.env.local` file in the main folder and add your Gemini key:
-   ```env
-   GEMINI_API_KEY="your-gemini-api-key"
-   ```
-
-3. **Run the app:**
+2. **Run the app:**
    ```bash
    npm run dev
    ```
