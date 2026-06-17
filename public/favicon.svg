@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="gold-metallic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E4B2" />
+      <stop offset="30%" stop-color="#D4AF37" />
+      <stop offset="50%" stop-color="#AA7C11" />
+      <stop offset="70%" stop-color="#F5E4B2" />
+      <stop offset="85%" stop-color="#8A640F" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+  </defs>
+
+  <!-- The Heart -->
+  <path 
+    d="M100,38 C100,38 95,30 89,30 C82,30 77,35 77,42 C77,49 87,57 100,66 C113,57 123,49 123,42 C123,35 118,30 111,30 C105,30 100,38 100,38 Z"
+    fill="none"
+    stroke="url(#gold-metallic)"
+    stroke-width="3.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Elegant Horizontal Crown Stand Bars -->
+  <line 
+    x1="93" y1="52" x2="107" y2="52" 
+    stroke="url(#gold-metallic)" 
+    stroke-width="3" 
+    stroke-linecap="round" 
+  />
+  <line 
+    x1="90" y1="57" x2="110" y2="57" 
+    stroke="url(#gold-metallic)" 
+    stroke-width="3.5" 
+    stroke-linecap="round" 
+  />
+
+  <!-- Cursive JP Monogram Calligraphy Paths -->
+  <path 
+    d="M84,103 C70,95 55,90 50,105 C44,123 71,133 82,109"
+    fill="none"
+    stroke="url(#gold-metallic)"
+    stroke-width="3.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  
+  <path 
+    d="M83,110 L108,162 C113,172 118,185 106,185 C92,185 86,168 97,145 L129,90 M113,124 C132,108 168,103 168,118 C168,133 133,137 125,134"
+    fill="none"
+    stroke="url(#gold-metallic)"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
