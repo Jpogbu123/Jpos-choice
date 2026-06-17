@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Award, MapPin } from 'lucide-react';
+import { Award } from 'lucide-react';
 import Navigation, { JpoLogo } from './components/Navigation';
 import Hero from './components/Hero';
 import ProductCatalog from './components/ProductCatalog';
@@ -96,10 +96,10 @@ export default function App() {
                 Find Your Signature Scent
               </h3>
               <p className="font-sans text-sm text-cream-muted leading-relaxed font-light">
-                At JPO's Choice, we make high-quality, long-lasting perfumes. We believe your perfume should be unique and tell your personal story.
+                At JPO's Choice, we sell high-quality, long-lasting perfumes. We believe your perfume should be unique and tell your personal story.
               </p>
               <p className="font-sans text-sm text-cream-muted leading-relaxed font-light">
-                Our perfumes use high-quality ingredients and are grouped into four clear styles: sweet, earthy, romantic, and sea-fresh.
+                Our perfumes use high-quality ingredients.
               </p>
 
               <div className="grid grid-cols-2 gap-6 pt-4">
@@ -147,26 +147,32 @@ export default function App() {
           <ScentQuiz onAddToCart={handleAddToCart} />
         </section>
 
-        {/* 4.5 JPO's Choice Studio & Consultation Details */}
+        {/* 4.5 JPO's Choice Community & Consultation Details */}
         <section className="py-12 px-6 max-w-7xl mx-auto border-t border-gold/10">
           <div className="border border-gold/10 bg-obsidian-light p-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-left">
-              {/* Column 1: Studio Details */}
-              <div className="space-y-4">
-                <span className="font-serif text-gold text-xs tracking-widest uppercase block">The Studio</span>
-                <h4 className="font-serif text-xl tracking-wider uppercase text-cream">JPO's Choice Studio</h4>
-                <p className="font-sans text-xs text-cream-muted leading-relaxed font-light">
-                  Our studio is a welcoming space where you can explore our perfumes in person.
-                </p>
-                <div className="flex items-center gap-2 text-xs text-cream-muted tracking-wider">
-                  <MapPin className="w-4 h-4 text-gold shrink-0" />
-                  <span>Karu, Fct, Abuja</span>
+              {/* Column 1: Community Details */}
+              <div className="space-y-4 flex flex-col justify-between">
+                <div>
+                  <span className="font-serif text-gold text-xs tracking-widest uppercase block">Community</span>
+                  <h4 className="font-serif text-xl tracking-wider uppercase text-cream">JPO's Choice Community</h4>
+                  <p className="font-sans text-xs text-cream-muted leading-relaxed font-light">
+                    Our community is a welcoming space where you can connect with us, discuss scents, and stay updated.
+                  </p>
                 </div>
+                <a
+                  href="https://chat.whatsapp.com/Jdwc3jIxgqr2Py72aWW59e"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="border border-gold text-gold hover:bg-gold hover:text-black transition-colors duration-300 block px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-center cursor-pointer select-none min-h-[44px] flex items-center justify-center space-x-2 rounded-none w-full"
+                >
+                  <span>Join Community</span>
+                </a>
               </div>
 
-              {/* Column 2: Studio Hours */}
+              {/* Column 2: Consultation Hours */}
               <div className="space-y-4">
-                <span className="font-serif text-gold text-xs tracking-widest uppercase block">Studio Hours</span>
+                <span className="font-serif text-gold text-xs tracking-widest uppercase block">Consultation Hours</span>
                 <h4 className="font-serif text-xl tracking-wider uppercase text-cream">Consultation Hours</h4>
                 <div className="space-y-2 text-xs text-cream-muted leading-relaxed font-light">
                   <div className="flex items-center justify-between">
