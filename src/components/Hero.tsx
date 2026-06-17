@@ -34,33 +34,28 @@ export default function Hero({ onStartQuiz, onBrowseCatalog }: HeroProps) {
         {/* Divide */}
         <div className="w-24 h-[1px] bg-gold/30 mb-8" />
 
-        {/* Tagline */}
-        <p className="font-serif text-lg sm:text-xl text-cream italic opacity-90 tracking-wide max-w-2xl leading-relaxed mb-6">
-          "Every scent is a choice. Make yours unforgettable."
-        </p>
-        
         <p className="font-sans text-xs sm:text-sm text-cream-muted tracking-[0.2em] max-w-lg leading-relaxed mb-12 uppercase">
-          An avant-garde exploration of hyper-stable concentrated oils, hydrating mists, and bespoke crown extraits.
+          Find your perfect matching perfume from our long-lasting oils and body mists.
         </p>
 
         {/* Custom Actions */}
         <div className="flex flex-col sm:flex-row gap-5 w-full max-w-md justify-center mt-2">
           <button
             onClick={onStartQuiz}
-            className="flex items-center justify-center space-x-2 border border-gold text-gold hover:bg-gold hover:text-black py-4 px-8 text-xs font-bold tracking-widest uppercase transition-all duration-300 rounded-none cursor-pointer hover:shadow-[0_0_25px_rgba(212,175,55,0.25)]"
+            className="flex items-center justify-center space-x-2 border border-gold text-gold hover:bg-gold hover:text-black py-4 px-8 text-xs font-bold tracking-widest uppercase transition-all duration-300 rounded-none cursor-pointer hover:shadow-[0_0_25px_rgba(212,175,55,0.25)] min-h-[44px]"
             id="hero-cta-quiz"
           >
-            <span>Discover Scent Stack</span>
+            <span>Start Scent Quiz</span>
             <Sparkles className="w-4 h-4 ml-1 animate-pulse" />
           </button>
 
           <button
             onClick={onBrowseCatalog}
-            className="flex items-center justify-center space-x-2 border border-gold/30 text-gold hover:border-gold hover:bg-gold/5 px-8 py-4 text-xs font-bold tracking-widest uppercase transition-all duration-300 rounded-none cursor-pointer"
+            className="flex items-center justify-center space-x-2 border border-gold/30 text-gold hover:border-gold hover:bg-gold/5 px-8 py-4 text-xs font-bold tracking-widest uppercase transition-all duration-300 rounded-none cursor-pointer min-h-[44px]"
             id="hero-cta-catalog"
           >
             <Compass className="w-4 h-4 mr-1 stroke-[1.5]" />
-            <span>Curated Pillars</span>
+            <span>Browse Perfumes</span>
           </button>
         </div>
       </div>

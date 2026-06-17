@@ -135,7 +135,7 @@ export default function CartDrawer({
                   )}
                 </div>
                 <h3 className="font-serif text-lg tracking-widest text-[#FFF] uppercase">
-                  {isSuccess ? 'Inquiry Dispatched' : isCheckout ? 'Shipping Archive' : 'Olfactory Cart'}
+                  {isSuccess ? 'Inquiry Sent' : isCheckout ? 'Shipping Details' : 'Your Cart'}
                 </h3>
               </div>
               <button
@@ -156,7 +156,7 @@ export default function CartDrawer({
                     <Check className="w-8 h-8 stroke-[1.5]" />
                   </div>
                   <h4 className="font-serif text-2xl tracking-widest uppercase text-gold leading-snug">
-                    Bespoke Selection Secured
+                    Order Inquiry Sent
                   </h4>
                   <div className="bg-black/40 border border-gold/15 p-4 w-full text-center">
                     <span className="text-[10px] uppercase tracking-[0.2em] text-cream/40 block mb-1">REFERENCE ID</span>
@@ -164,10 +164,10 @@ export default function CartDrawer({
                   </div>
                   <div className="space-y-4 max-w-sm text-center">
                     <p className="text-xs text-cream-muted leading-relaxed font-light">
-                      Your premium reservation summary has been structured and dispatched directly to the JPO's Choice studio concierge via WhatsApp.
+                      Your selection has been saved and sent directly to our team via WhatsApp.
                     </p>
                     <p className="text-[11px] text-cream/30 italic">
-                      "A formulation consultant will review your selection, check live reserves, and assist you with delivery specifications shortly."
+                      "We will review your selection, check current stock, and message you about delivery options shortly."
                     </p>
                   </div>
                   <button
@@ -175,7 +175,7 @@ export default function CartDrawer({
                     className="w-full bg-gold hover:bg-gold-hover text-obsidian py-3.5 text-xs tracking-[0.2em] font-bold uppercase transition block cursor-pointer select-none rounded-none"
                     id="btn-confirm-success-close"
                   >
-                    Return to Catalogue
+                    Return to Catalog
                   </button>
                 </div>
               ) : isCheckout ? (
@@ -183,9 +183,9 @@ export default function CartDrawer({
                 <form onSubmit={handleSubmitCheckout} className="space-y-6 text-left">
                   <div className="space-y-1">
                     <span className="text-[10px] tracking-[0.2em] uppercase text-gold font-serif block">[Step 2 of 2]</span>
-                    <h4 className="font-serif text-lg uppercase tracking-wider text-cream">Concierge Shipping Info</h4>
+                    <h4 className="font-serif text-lg uppercase tracking-wider text-cream">Shipping Details</h4>
                     <p className="text-[11px] text-cream-muted leading-relaxed">
-                      Please enter your details to route customized packaging and checkout logs straight to WhatsApp.
+                      Please enter your details to route packaging details and checkout information straight to WhatsApp.
                     </p>
                   </div>
 
@@ -243,7 +243,7 @@ export default function CartDrawer({
 
                   {/* Summary recap inside checkout */}
                   <div className="border border-gold/10 bg-black/20 p-4 space-y-3 mt-4">
-                    <span className="text-[9px] tracking-widest uppercase text-cream/40 font-serif block">Reservation Summary</span>
+                    <span className="text-[9px] tracking-widest uppercase text-cream/40 font-serif block">Order Summary</span>
                     <div className="max-h-24 overflow-y-auto space-y-2 text-[11px] border-b border-gold/5 pb-2">
                       {cartItems.map((item) => (
                         <div key={item.id} className="flex justify-between items-center text-cream-muted">
@@ -273,7 +273,7 @@ export default function CartDrawer({
                       id="btn-checkout-confirm"
                     >
                       <Lock className="w-3.5 h-3.5" />
-                      <span>Dispatch WhatsApp</span>
+                      <span>Send via WhatsApp</span>
                     </button>
                   </div>
                 </form>
@@ -284,9 +284,9 @@ export default function CartDrawer({
                     <ShoppingBag className="w-5 h-5 stroke-[1.2]" />
                   </div>
                   <div className="space-y-2">
-                    <h4 className="font-serif text-base tracking-widest uppercase text-cream">Archive is Vacant</h4>
+                    <h4 className="font-serif text-base tracking-widest uppercase text-cream">Your Cart is Empty</h4>
                     <p className="text-xs text-cream-muted leading-relaxed max-w-[280px] mx-auto font-light">
-                      No olfactory artifacts have been added to your reservation stack yet.
+                      No perfumes have been added to your shopping cart yet.
                     </p>
                   </div>
                   <button
@@ -393,7 +393,7 @@ export default function CartDrawer({
                     className="text-[9px] font-serif uppercase tracking-widest text-[#FFF]/30 hover:text-[#FFF]/80 transition-colors mx-auto block cursor-pointer"
                     id="btn-cart-clear-all"
                   >
-                    Clear Scent Reservation
+                    Clear Cart
                   </button>
                 </div>
               )}
@@ -410,7 +410,7 @@ export default function CartDrawer({
                         <span>${subtotal}</span>
                       </div>
                       <div className="flex justify-between items-center text-sm font-bold uppercase tracking-widest">
-                        <span className="text-gold">Scent Reservation Stack</span>
+                        <span className="text-gold">Total</span>
                         <span className="text-gold text-lg">${subtotal}</span>
                       </div>
                     </div>

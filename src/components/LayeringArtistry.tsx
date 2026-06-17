@@ -17,33 +17,33 @@ export default function LayeringArtistry() {
     {
       id: 0,
       number: "01",
-      title: "Layer 1: The Hydrator (Body Oil)",
-      summary: "Preps the skin to ensure the fragrance doesn't evaporate into dry pores.",
-      detail: "A hydrated base is the single most important pre-requisite of scent longevity. Applying a luxury, lightweight body oil first primes dry skin cells, creating a beautifully receptive, smooth lipid barrier that prevents your natural body pores from consuming or rapidly evaporating the delicate premium scent compounds.",
+      title: "Layer 1: Moisturizer (Body Oil)",
+      summary: "Prep your skin so the scent sticks and lasts longer.",
+      detail: "A moisturized base is the most important step for a long-lasting scent. Applying a lightweight body oil first hydrates your skin, preventing your pores from absorbing the perfume too quickly and making it fade.",
       icon: <GlassWater className="w-5 h-5 text-gold stroke-[1.5]" />
     },
     {
       id: 1,
       number: "02",
-      title: "Layer 2: The Anchor (Perfume Oil)",
-      summary: "Provides the long-lasting foundation that sits close to the pulse points.",
-      detail: "Highly concentrated botanical perfume oils are exceptionally rich in heavy molecular lipids. Applying this oil base directly onto key thermal points (wrists, neck, and behind ears) forms a robust scent anchor, locking the base notes down to your skin's surface to serve as a slow-release projection engine.",
+      title: "Layer 2: Scent Anchor (Perfume Oil)",
+      summary: "Apply a long-lasting oil base close to your warm pulse points.",
+      detail: "Concentrated perfume oils are rich and stick to your skin. Apply this oil directly onto warm areas like your wrists and neck to create a solid scent foundation that slowly releases the fragrance over hours.",
       icon: <Anchor className="w-5 h-5 text-gold stroke-[1.5]" />
     },
     {
       id: 2,
       number: "03",
-      title: "Layer 3: The Bridge (Body Spray/Mist)",
-      summary: "Creates an immediate, fresh scent cloud that covers a wider surface area.",
-      detail: "Misting or spraying a refreshing body mist over the baseline. This light, fine mist veil acts as an atmospheric molecular bridge, expanding your sillage, elevating lighter notes, and creating a fresh scent bubble that projects over a wider physical radius with motion.",
+      title: "Layer 3: Scent Bridge (Body Spray/Mist)",
+      summary: "Spray a fresh mist to spread the scent around you.",
+      detail: "Spraying a light body mist over your perfume oil layer helps spread the scent. This creates a fresh scent bubble around you that gets noticed when you move.",
       icon: <Wind className="w-5 h-5 text-gold stroke-[1.5]" />
     },
     {
       id: 3,
       number: "04",
-      title: "Layer 4: The Crown (Eau de Parfum)",
-      summary: "The high-performance finish that projects your signature to everyone around you.",
-      detail: "The terminal masterpiece step. Mist a high-performance Eau de Parfum or concentrated Extrait onto pre-moisturized pulse zones and outerwear fabrics. This supreme layer delivers outstanding projection, ensuring your customized signature is elevated and fully appreciated.",
+      title: "Layer 4: Final Touch (Eau de Parfum)",
+      summary: "Finish with a high-quality spray for maximum reach.",
+      detail: "The final step. Spray your Eau de Parfum onto your wrists, neck, and clothes. This outer layer gives you strong reach, making sure your signature scent is easily noticed by everyone.",
       icon: <Crown className="w-5 h-5 text-gold stroke-[1.5]" />
     }
   ];
@@ -57,13 +57,13 @@ export default function LayeringArtistry() {
       {/* Title block */}
       <div className="text-center mb-16">
         <span className="font-serif text-gold text-xs tracking-[0.4em] uppercase block mb-3">
-          Apothecary Science
+          Scent Secrets
         </span>
         <h3 className="font-serif text-3xl sm:text-4xl font-light tracking-widest text-gold uppercase mb-4 leading-normal">
-          Layering Artistry
+          How to Layer Scents
         </h3>
         <p className="font-sans text-xs sm:text-sm text-cream-muted tracking-[0.2em] max-w-2xl mx-auto leading-relaxed uppercase">
-          Master the four-layer formula to extend scent longevity and sculpt a completely bespoke projection trail.
+          Master the four-step guide to make your perfumes last longer and smell unique.
         </p>
       </div>
 
@@ -80,11 +80,11 @@ export default function LayeringArtistry() {
               {/* Accordion Header */}
               <button
                 onClick={() => toggleTip(tip.id)}
-                className="w-full flex items-center justify-between p-6 cursor-pointer hover:bg-gold/5 focus:outline-none text-left select-none"
+                className="w-full flex flex-col md:flex-row items-center justify-between p-6 cursor-pointer hover:bg-gold/5 focus:outline-none text-center md:text-left select-none gap-4 md:gap-0"
                 aria-expanded={isOpen}
                 id={`btn-toggle-tip-${tip.id}`}
               >
-                <div className="flex items-center space-x-4 md:space-x-6">
+                <div className="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-6 w-full md:w-auto">
                   {/* Sequence Number */}
                   <span className="font-serif text-gold text-lg md:text-xl font-light opacity-60">
                     {tip.number}
@@ -96,18 +96,18 @@ export default function LayeringArtistry() {
                   </div>
 
                   {/* Title and brief description */}
-                  <div>
+                  <div className="text-center md:text-left">
                     <h4 className="font-serif text-sm sm:text-base font-medium tracking-wider text-cream">
                       {tip.title}
                     </h4>
-                    <p className="font-sans text-xs text-cream-muted mt-1 leading-snug line-clamp-1 max-w-xl font-light">
+                    <p className="font-sans text-xs text-cream-muted mt-1 leading-snug max-w-xl font-light">
                       {tip.summary}
                     </p>
                   </div>
                 </div>
 
                 {/* Chevron */}
-                <div className="ml-4 shrink-0">
+                <div className="shrink-0">
                   <ChevronDown 
                     className={`w-5 h-5 text-gold transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} 
                   />
@@ -120,7 +120,7 @@ export default function LayeringArtistry() {
                   isOpen ? 'max-h-60 border-t border-gold/10' : 'max-h-0'
                 }`}
               >
-                <div className="p-6 md:pl-[5.5rem] bg-black/40 text-left">
+                <div className="p-6 md:pl-[5.5rem] bg-black/40 text-center md:text-left">
                   <p className="font-sans text-xs md:text-sm text-cream-muted leading-relaxed font-light">
                     {tip.detail}
                   </p>

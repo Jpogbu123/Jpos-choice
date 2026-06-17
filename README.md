@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# JPOS Choice - Perfume Matching and Scent Store
 
-# Run and deploy your AI Studio app
+A web app for JPOS Choice to help you find your favorite perfume and see how to mix different scents together.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/9a761c14-9101-4100-a1dc-609e1919b6f4
+- **Scent Quiz**: A quiz to help you find the best scent for you.
+- **Perfume List**: Check out different perfumes like sweet, earthy, romantic, and sea-fresh.
+- **Scent Mixing**: Learn how to mix different perfume oils to make them last longer.
+- **Order on WhatsApp**: Send your order details straight to WhatsApp.
 
-## Run Locally
+## How to Run it Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js
 
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. **Add API Key:**
+   Create a `.env.local` file in the main folder and add your Gemini key:
+   ```env
+   GEMINI_API_KEY="your-gemini-api-key"
+   ```
+
+3. **Run the app:**
+   ```bash
+   npm run dev
+   ```

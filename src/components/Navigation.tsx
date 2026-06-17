@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Sparkles, Menu, X, Shield, ShoppingBag, Wind } from 'lucide-react';
 
-const JpoLogo = () => (
+export const JpoLogo = ({ className = "w-10 h-10 sm:w-12 sm:h-12 shrink-0 select-none animate-fade-in" }: { className?: string }) => (
   <svg 
     viewBox="0 0 200 200" 
-    className="w-10 h-10 sm:w-12 sm:h-12 shrink-0 select-none animate-fade-in"
+    className={className}
     id="svg-jpo-logo"
   >
     <defs>
@@ -83,70 +83,66 @@ export default function Navigation({ onStartQuiz, onOpenCatalog, cartItemCount =
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-obsidian-light/80 backdrop-blur-md border-b border-gold/10">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div className="w-full px-6 lg:px-12 h-20 flex items-center justify-between">
         {/* Brand Logo / Neoclassical Serif Typography */}
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="flex items-center space-x-4 text-left cursor-pointer focus:outline-none flex-grow md:flex-grow-0"
+          className="flex items-center space-x-2 sm:space-x-4 text-left cursor-pointer focus:outline-none shrink-0"
           id="nav-logo"
         >
           <JpoLogo />
-          <div className="text-gold text-xl sm:text-2xl tracking-[0.3em] font-light font-serif uppercase">
+          <div className="text-gold text-base sm:text-lg md:text-xl lg:text-2xl tracking-[0.15em] sm:tracking-[0.3em] font-light font-serif uppercase whitespace-nowrap">
             JPO's Choice
-          </div>
-          <div className="hidden lg:block h-[1px] w-24 bg-gold/30"></div>
-          <div className="hidden sm:block text-[9px] tracking-[0.2em] uppercase opacity-60 font-serif">
-            Est. 2026 &bull; Artisanal Fragrance
           </div>
         </button>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8 text-xs tracking-widest uppercase font-serif">
+        <div className="hidden lg:flex items-center space-x-6 xl:space-x-8 text-xs tracking-widest uppercase font-serif">
           <button 
             onClick={() => {
               window.scrollTo({ top: 0, behavior: 'smooth' });
               setIsOpen(false);
             }} 
-            className="text-cream-muted hover:text-gold transition-colors duration-300 py-3 px-1 cursor-pointer focus:outline-none"
+            className="text-cream-muted hover:text-gold transition-colors duration-300 py-3 px-1 cursor-pointer focus:outline-none whitespace-nowrap"
             id="nav-btn-home"
           >
             Home
           </button>
           <button 
             onClick={() => scrollToSection('philosophy')} 
-            className="text-cream-muted hover:text-gold transition-colors duration-300 py-3 px-1 cursor-pointer focus:outline-none"
+            className="text-cream-muted hover:text-gold transition-colors duration-300 py-3 px-1 cursor-pointer focus:outline-none whitespace-nowrap"
             id="nav-btn-philosophy"
           >
-            Our Philosophy
+            Philosophy
           </button>
           <button 
             onClick={() => scrollToSection('catalog')} 
-            className="text-cream-muted hover:text-gold transition-colors duration-300 py-3 px-1 cursor-pointer focus:outline-none"
+            className="text-cream-muted hover:text-gold transition-colors duration-300 py-3 px-1 cursor-pointer focus:outline-none whitespace-nowrap"
             id="nav-btn-catalog"
           >
-            Curated Catalog
+            Catalog
           </button>
           <button 
             onClick={() => scrollToSection('layering-artistry')} 
-            className="text-cream-muted hover:text-gold transition-colors duration-300 py-3 px-1 cursor-pointer focus:outline-none"
+            className="text-cream-muted hover:text-gold transition-colors duration-300 py-3 px-1 cursor-pointer focus:outline-none whitespace-nowrap"
             id="nav-btn-tips"
           >
-            Layering Tips
+            Layering
           </button>
           
           <button
             onClick={onStartQuiz}
-            className="border border-gold text-gold text-[10px] tracking-widest uppercase font-bold py-2.5 px-5 hover:bg-gold hover:text-black transition-colors rounded-none cursor-pointer"
+            className="border border-gold text-gold text-[10px] tracking-widest uppercase font-bold py-2.5 px-5 hover:bg-gold hover:text-black transition-colors rounded-none cursor-pointer whitespace-nowrap"
             id="nav-cta-quiz"
           >
-            Scent Stack Quiz
+            Scent Quiz
           </button>
 
           {/* Elegant Desktop Shopping Bag */}
           <button
             onClick={onOpenCart}
             className="relative p-2.5 text-gold hover:text-[#FFF] border border-transparent hover:border-gold/10 transition-all flex items-center justify-center cursor-pointer"
-            aria-label="View Shopping Archive"
+            aria-label="View Shopping Cart"
             id="nav-btn-cart"
           >
             <ShoppingBag className="w-5 h-5 stroke-[1.5]" />
@@ -159,12 +155,12 @@ export default function Navigation({ onStartQuiz, onOpenCatalog, cartItemCount =
         </div>
 
         {/* Mobile Control Row with Cart Toggle & Hamburger */}
-        <div className="flex md:hidden items-center space-x-2">
+        <div className="flex lg:hidden items-center space-x-2">
           {/* Mobile Shopping Bag */}
           <button
             onClick={onOpenCart}
             className="relative w-11 h-11 border border-gold/10 flex items-center justify-center text-gold cursor-pointer"
-            aria-label="View Mobile Shopping Archive"
+            aria-label="View Shopping Cart"
             id="nav-mobile-btn-cart"
           >
             <ShoppingBag className="w-5 h-5 stroke-[1.5]" />
@@ -188,37 +184,37 @@ export default function Navigation({ onStartQuiz, onOpenCatalog, cartItemCount =
 
       {/* Mobile Menu Panel */}
       {isOpen && (
-        <div className="md:hidden absolute top-20 left-0 right-0 bg-obsidian border-b border-gold/20 flex flex-col items-center py-8 space-y-6 text-xs uppercase tracking-widest font-serif shadow-2xl animate-fade-in">
+        <div className="lg:hidden absolute top-20 left-0 right-0 bg-obsidian border-b border-gold/20 flex flex-col items-center py-6 space-y-4 text-xs uppercase tracking-widest font-serif shadow-2xl animate-fade-in">
           <button 
             onClick={() => {
               window.scrollTo({ top: 0, behavior: 'smooth' });
               setIsOpen(false);
             }} 
-            className="text-cream-muted hover:text-gold py-2 w-full text-center"
+            className="text-cream-muted hover:text-gold w-full text-center min-h-[44px] flex items-center justify-center cursor-pointer"
             id="mobile-nav-val-home"
           >
             Home
           </button>
           <button 
             onClick={() => scrollToSection('philosophy')} 
-            className="text-cream-muted hover:text-gold py-2 w-full text-center"
+            className="text-cream-muted hover:text-gold w-full text-center min-h-[44px] flex items-center justify-center cursor-pointer"
             id="mobile-nav-val-philosophy"
           >
-            Our Philosophy
+            Philosophy
           </button>
           <button 
             onClick={() => scrollToSection('catalog')} 
-            className="text-cream-muted hover:text-gold py-2 w-full text-center"
+            className="text-cream-muted hover:text-gold w-full text-center min-h-[44px] flex items-center justify-center cursor-pointer"
             id="mobile-nav-val-catalog"
           >
-            Curated Catalog
+            Catalog
           </button>
           <button 
             onClick={() => scrollToSection('layering-artistry')} 
-            className="text-cream-muted hover:text-gold py-2 w-full text-center"
+            className="text-cream-muted hover:text-gold w-full text-center min-h-[44px] flex items-center justify-center cursor-pointer"
             id="mobile-nav-val-tips"
           >
-            Layering Tips
+            Layering
           </button>
           
           <button
@@ -226,10 +222,10 @@ export default function Navigation({ onStartQuiz, onOpenCatalog, cartItemCount =
               setIsOpen(false);
               onStartQuiz();
             }}
-            className="border border-gold text-gold hover:bg-gold hover:text-black py-3 rounded-none font-bold text-xs uppercase tracking-widest w-4/5 text-center mt-2 transition-colors cursor-pointer"
+            className="border border-gold text-gold hover:bg-gold hover:text-black min-h-[44px] flex items-center justify-center rounded-none font-bold text-xs uppercase tracking-widest w-4/5 text-center mt-2 transition-colors cursor-pointer"
             id="mobile-nav-cta-quiz"
           >
-            Scent Stack Quiz
+            Scent Quiz
           </button>
         </div>
       )}
