@@ -35,7 +35,7 @@ export default function Hero({ onStartQuiz, onBrowseCatalog }: HeroProps) {
         <div className="w-24 h-[1px] bg-gold/30 mb-8" />
 
         <p className="font-sans text-xs sm:text-sm text-cream-muted tracking-[0.2em] max-w-lg leading-relaxed mb-12 uppercase">
-          Find your perfect matching perfume from our long-lasting oils and body mists.
+          Find your perfect matching perfume from our catalog, Curated architectural profiles styled for durability, projection, and sensory uniqueness
         </p>
 
         {/* Custom Actions */}
