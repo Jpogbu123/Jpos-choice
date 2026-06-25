@@ -3,15 +3,16 @@ import { Perfume, QuizQuestion, StackRecommendation } from '../types';
 export const PERFUME_CATALOG: Perfume[] = [
   {
     id: 'gourmand-vanilla',
-    name: 'Vanilla Nectar',
-    tagline: 'Warm, sweet, and comforting.',
+    name: 'Weekend Berries',
+    tagline: 'Vibrant, fruity, and playful.',
     category: 'The Gourmand',
-    description: 'A warm and sweet amber perfume that wraps you in vanilla and toasted caramel notes, leaving a long-lasting scent trail.',
-    notes: ['Madagascar Vanilla', 'Toasted Tonka Bean', 'Heavy Amber', 'Crushed Almonds'],
-    image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=600&h=600',
+    description: 'A bright and sparkling fragrance that captures the essence of a sun-drenched getaway, blending lush red berries with delicate floral undertones for a refreshing and uplifting experience.',
+    notes: ['Wild Raspberries', 'Sugared Strawberries', 'White Rose Petals', 'Sparkling Musk'],
+    image: '/weekend-berries.jpg',
     size: '50ml / 1.7 fl. oz.',
     concentration: 'Extrait de Parfum',
-    price: '$145'
+    price: '₦5,500',
+    sillage: 'Long-Lasting'
   },
   {
     id: 'gourmand-cafe',

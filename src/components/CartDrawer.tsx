@@ -40,6 +40,8 @@ export default function CartDrawer({
     return acc + (parsedPrice(item.price) * item.quantity);
   }, 0);
 
+  const activeCurrency = cartItems.length > 0 ? (cartItems.some(item => item.price.includes('₦')) ? '₦' : '$') : '$';
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -69,7 +71,7 @@ export default function CartDrawer({
       `------------------------------------\n` +
       `*Order ID:* ${reference}\n\n` +
       `*ARCHIVE ITEMS:* \n${orderListText}\n` +
-      `*TOTAL:* $${subtotal}\n\n` +
+      `*TOTAL:* ${activeCurrency}${subtotal.toLocaleString()}\n\n` +
       `------------------------------------\n` +
       `*SHIPPING REQUEST DETAILS:* \n` +
       `👤 *Name:* ${formData.fullName}\n` +
@@ -254,7 +256,7 @@ export default function CartDrawer({
                     </div>
                     <div className="flex justify-between text-xs tracking-wider uppercase">
                       <span className="text-gold">Grand Total</span>
-                      <strong className="text-gold text-sm">${subtotal}</strong>
+                      <strong className="text-gold text-sm">{activeCurrency}{subtotal.toLocaleString()}</strong>
                     </div>
                   </div>
 
@@ -407,11 +409,11 @@ export default function CartDrawer({
                     <div className="space-y-2">
                       <div className="flex justify-between items-center text-xs tracking-wider text-cream/50 uppercase font-serif">
                         <span>Items Subtotal</span>
-                        <span>${subtotal}</span>
+                        <span>{activeCurrency}{subtotal.toLocaleString()}</span>
                       </div>
                       <div className="flex justify-between items-center text-sm font-bold uppercase tracking-widest">
                         <span className="text-gold">Total</span>
-                        <span className="text-gold text-lg">${subtotal}</span>
+                        <span className="text-gold text-lg">{activeCurrency}{subtotal.toLocaleString()}</span>
                       </div>
                     </div>
                     

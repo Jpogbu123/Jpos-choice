@@ -260,7 +260,7 @@ export default function ProductCatalog({ whatsappNumber, onSetWhatsappNumber, on
                   </div>
                   <div>
                     <span className="text-cream/40 block text-[9px] uppercase tracking-wider">Sillage</span>
-                    <span className="text-gold">Very Long Lasting</span>
+                    <span className="text-gold">{selectedProduct.sillage || 'Very Long Lasting'}</span>
                   </div>
                 </div>
               </div>

@@ -13,6 +13,7 @@ export interface Perfume {
   size: string;
   concentration: string;
   price: string;
+  sillage?: string;
 }
 
 export interface QuizOption {
