@@ -29,15 +29,16 @@ export const PERFUME_CATALOG: Perfume[] = [
   },
   {
     id: 'woody-santal',
-    name: 'Santal Imperial',
-    tagline: 'Rich, woody, and warm.',
+    name: 'Dunhill Desire for Men',
+    tagline: 'Spontaneous, passionate, and energetic.',
     category: 'The Woody',
-    description: 'A clean, warm wood fragrance made with premium cedar and sandalwood. Sits close to the skin and lasts all day.',
-    notes: ['Australian Sandalwood', 'Virginia Cedar', 'Raw Leather', 'Smoked Cardamom'],
-    image: 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&q=80&w=600&h=600',
-    size: '50ml / 1.7 fl. oz.',
+    description: 'This powerful blend opens with the crispness of fresh apple and warm coriander, evolving into a heart of frankincense and Sichuan pepper, and settling into a soulful base of vanilla and Bubinga wood.',
+    notes: ['Red Apple', 'Coriander', 'Incense', 'Sichuan Pepper', 'Vanilla', 'Woodsy Notes'],
+    image: '/dunhill-desire.jpg',
+    size: '100ml / 3.3 fl. oz.',
     concentration: 'Eau de Parfum',
-    price: '$135'
+    price: '₦10,000',
+    sillage: 'Moderate to Long-Lasting'
   },
   {
     id: 'woody-oud',
