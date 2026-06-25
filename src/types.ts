@@ -6,7 +6,7 @@ export interface Perfume {
   id: string;
   name: string;
   tagline: string;
-  category: 'The Gourmand' | 'The Woody' | 'The Floral' | 'The Fresh';
+  category: string;
   description: string;
   notes: string[];
   image: string;
