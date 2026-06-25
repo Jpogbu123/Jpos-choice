@@ -16,15 +16,16 @@ export const PERFUME_CATALOG: Perfume[] = [
   },
   {
     id: 'gourmand-cafe',
-    name: 'Cafe Noir',
-    tagline: 'Roasted coffee, dark chocolate, and warm caramel.',
+    name: 'Boss Orange',
+    tagline: 'Spontaneous, passionate, and energetic.',
     category: 'The Gourmand',
-    description: 'Inspired by the rich smell of morning coffee. Warm roasted coffee beans are blended with sweet caramel and chocolate.',
-    notes: ['Arabica Coffee', 'Dark Cacao Absolute', 'Salted Caramel', 'Fresh Hazelnut'],
-    image: 'https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&q=80&w=600&h=600',
-    size: '50ml / 1.7 fl. oz.',
-    concentration: 'Extrait de Parfum',
-    price: '$150'
+    description: 'A powerful blend that opens with the crispness of fresh apple and warm coriander, evolving into a heart of frankincense and Sichuan pepper, and settling into a soulful base of vanilla and Bubinga wood.',
+    notes: ['Red Apple', 'Coriander', 'Incense', 'Sichuan Pepper', 'Vanilla', 'Woodsy Notes'],
+    image: '/boss-orange.jpg',
+    size: '100ml / 3.3 fl. oz.',
+    concentration: 'Eau de Parfum',
+    price: '$150',
+    sillage: 'Moderate to Long-Lasting'
   },
   {
     id: 'woody-santal',
