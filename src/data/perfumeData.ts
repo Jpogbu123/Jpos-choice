@@ -54,16 +54,17 @@ export const PERFUME_CATALOG: Perfume[] = [
     sillage: 'Powerful and Long-Lasting'
   },
   {
-    id: 'floral-rose',
-    name: 'Satin Rose',
-    tagline: 'Fresh, light, and romantic roses.',
-    category: 'The Floral',
-    description: 'A fresh and light rose scent. It mixes dewy rose petals with clean white musk and sweet lychee for a light, romantic feel.',
-    notes: ['Damask Rose', 'Peony Petals', 'White Musk', 'Lychee Pulp'],
-    image: 'https://images.unsplash.com/photo-1585211969224-3e9929861592?auto=format&fit=crop&q=80&w=600&h=600',
+    id: 'woody-black-power',
+    name: 'Black Power',
+    tagline: 'Bold, mysterious, and commanding.',
+    category: 'The Woody',
+    description: 'An evocative fragrance by Hanna\'s Secret that commands attention, blending deep intensity with sophisticated elegance. This scent is designed for those who exude natural authority and timeless strength.',
+    notes: ['Dark Musk', 'Amber', 'Cedarwood', 'Black Pepper', 'Bergamot'],
+    image: '/black-power.jpg',
     size: '50ml / 1.7 fl. oz.',
     concentration: 'Eau de Parfum',
-    price: '$140'
+    price: '₦7,000',
+    sillage: 'Intense and Long-Lasting'
   },
   {
     id: 'floral-jasmin',
