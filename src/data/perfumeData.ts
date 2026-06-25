@@ -76,7 +76,7 @@ export const PERFUME_CATALOG: Perfume[] = [
     image: '/sugar.jpg',
     size: '50ml / 1.7 fl. oz.',
     concentration: 'Eau de Parfum',
-    price: '₦5,500',
+    price: '₦6,500',
     sillage: 'Long-lasting'
   },
   {
