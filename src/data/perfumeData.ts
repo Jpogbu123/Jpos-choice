@@ -67,16 +67,17 @@ export const PERFUME_CATALOG: Perfume[] = [
     sillage: 'Intense and Long-Lasting'
   },
   {
-    id: 'floral-jasmin',
-    name: 'Jardin de Jasmin',
-    tagline: 'Sweet jasmine and fresh orange blossom.',
+    id: 'floral-sugar',
+    name: 'Sugar',
+    tagline: 'Original, Fresh',
     category: 'The Floral',
-    description: 'A light, floral scent that smells like fresh white flowers and sweet jasmine, balanced with a soft amber base.',
-    notes: ['Night-Blooming Jasmin', 'Egyptian Neroli Absolute', 'Orange Blossom Water', 'Mineral Amber'],
-    image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&q=80&w=600&h=600',
+    description: 'An artisanal fragrance compounded in-house, designed to maintain its peak olfactory profile for 12+ after the initial application.',
+    notes: ['Fresh', 'Earthly'],
+    image: '/sugar.jpg',
     size: '50ml / 1.7 fl. oz.',
     concentration: 'Eau de Parfum',
-    price: '$138'
+    price: '₦5,500',
+    sillage: 'Long-lasting'
   },
   {
     id: 'fresh-soleil',
