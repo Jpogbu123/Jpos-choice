@@ -42,15 +42,16 @@ export const PERFUME_CATALOG: Perfume[] = [
   },
   {
     id: 'woody-oud',
-    name: 'Oud Majestueux',
-    tagline: 'Rich wood, patchouli, and warm spices.',
+    name: 'Scandal by Jean Paul Gaultier',
+    tagline: 'Bold, Honey-Sweet, Sophisticated, Provocative.',
     category: 'The Woody',
-    description: 'A rich wood blend that features exotic oud wood mixed with warm saffron, patchouli, and smoky vetiver.',
-    notes: ['Cambodian Oud Wood', 'Dark Indonesian Patchouli', 'Laotian Saffron', 'Smoked Vetiver'],
-    image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80&w=600&h=600',
-    size: '50ml / 1.7 fl. oz.',
-    concentration: 'Extrait de Parfum',
-    price: '$165'
+    description: 'This fragrance is an elegant, powerhouse blend that opens with the freshness of blood orange and gardenia, transitions into a rich heart of honey, and settles into a warm, sensual base of patchouli.',
+    notes: ['Blood Orange', 'Gardenia', 'Honey', 'Patchouli'],
+    image: '/scandal.jpg',
+    size: '100ml / 3.3 fl. oz.',
+    concentration: 'Eau de Parfum',
+    price: '₦10,000',
+    sillage: 'Powerful and Long-Lasting'
   },
   {
     id: 'floral-rose',
