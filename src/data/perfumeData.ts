@@ -93,17 +93,18 @@ export const PERFUME_CATALOG: Perfume[] = [
     sillage: 'Strong and Long-Lasting'
   },
   {
-    id: 'fresh-neroli',
-    name: 'Neroli Sauvage',
-    tagline: 'Fresh orange leaf, lemon, and white wood.',
-    category: 'The Fresh',
-    description: 'A refreshing scent of wild orange leaves and cool air, mixed with fresh lemon and a clean wood base.',
-    notes: ['Wild Petitgrain', 'Frozen Lemon Rind', 'Mashed Sweet Basil', 'White Himalayan Cedar'],
-    image: 'https://images.unsplash.com/photo-1528740564265-2d8c5cca7f41?auto=format&fit=crop&q=80&w=600&h=600',
-    size: '50ml / 1.7 fl. oz.',
-    concentration: 'Eau de Cologne / Intense',
-    price: '$125'
-  }
+    id: 'gourmand-monogotas',
+    name: 'Monogotas (Vainilla & Fresa)',
+    tagline: 'Sweet, comforting, and timeless.',
+    category: 'The Gourmand',
+    description: 'This delightful pairing combines the timeless, gourmand warmth of vanilla with the vibrant, sun-ripened essence of fresh strawberries. Together, they create a multi-dimensional fragrance experience that balances a gentle, sugary embrace with a cheerful burst of juicy energy, making it a versatile choice for any mood.',
+    notes: ['Vanilla', 'Strawberry', 'Sugary Accords', 'Red Fruits'],
+    image: '/monogotas.jpg',
+    size: '2 x 100ml / 3.3 fl. oz.',
+    concentration: 'Eau de Toilette',
+    price: '₦7,000',
+    sillage: 'Moderate'
+  },
 ];
 
 export const QUIZ_QUESTIONS: QuizQuestion[] = [
