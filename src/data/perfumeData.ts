@@ -80,16 +80,17 @@ export const PERFUME_CATALOG: Perfume[] = [
     sillage: 'Long-lasting'
   },
   {
-    id: 'fresh-soleil',
-    name: 'Soleil Vert',
-    tagline: 'Fresh citrus, mint, and sea salt.',
-    category: 'The Fresh',
-    description: 'A clean and energizing burst of fresh Italian citrus, cool mint, and a touch of sea salt that stays fresh all day.',
-    notes: ['Calabrian Bergamot', 'Sea Salt Spray', 'Spearmint Bark', 'White Ginger'],
-    image: 'https://images.unsplash.com/photo-1615397349754-cfa2066a298e?auto=format&fit=crop&q=80&w=600&h=600',
-    size: '50ml / 1.7 fl. oz.',
-    concentration: 'Eau de Fraîche / Intense',
-    price: '$120'
+    id: 'woody-giorgio',
+    name: 'Giorgio Black',
+    tagline: 'Sophisticated, Intense, Timeless, Elegant.',
+    category: 'The Woody',
+    description: 'A refined fragrance that commands attention, opening with a bold presence and evolving into a complex, lingering character. This special edition blend is crafted for those who appreciate a balance of classic strength and modern allure.',
+    notes: ['Warm Spice', 'Rich Woods', 'Deep Resins', 'Velvety Musk'],
+    image: '/giorgio-black.jpg',
+    size: '100ml / 3.4 fl. oz.',
+    concentration: 'Eau de Parfum',
+    price: '₦25,000',
+    sillage: 'Strong and Long-Lasting'
   },
   {
     id: 'fresh-neroli',
